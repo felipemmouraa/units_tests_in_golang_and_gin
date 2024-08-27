@@ -6,6 +6,9 @@ import (
     "units_tests_in_golang_and_gin/handlers"
 )
 
-func TestMain(t *testing.T) {
-    // Your test logic here
+func TestMain(m *testing.M) {
+    // Configurações globais
+    code := m.Run()
+    // Limpeza
+    os.Exit(code)
 }
